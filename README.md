@@ -2,7 +2,7 @@
 
 To open this project, you can access this github webpage:
 
-https://ull-esit-dmsi-1920.github.io/vue-intro-antonella/
+https://ull-esit-dmsi-1920.github.io/vue-fundamentals-alu0101227610/
 
 ## TODOS for the Shopping list app
 
