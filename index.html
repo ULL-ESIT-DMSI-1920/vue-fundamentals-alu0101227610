@@ -17,11 +17,13 @@
       <button v-else class="btn btn-cancel" @click="changeState('default')">Go back</button>
     </div>
     <div v-if="state === 'edit'" class="add-item-form">
-    <input v-model="newItem" @keyup.enter="saveItem" placeholder="Write out the new item" type="text" name="newItem" id="newItem">
-    <button @click="saveItem" :disabled="newItem.length === 0" class="btn btn-primary">Save item</button>
-    <button v-if="items.length != 0 && status === false" v-on:click="deleteItem" style="background-color:rgb(98, 0, 255)" class="btn btn-primary"> Delete Last Item </button>
-    <button v-if="items.length === 0 && status === false" v-on:click="deleteItem" style="background-color:rgb(128, 128, 128)" class="btn btn-primary" disabled="true"> Delete Last Item </button>
-    <p v-if="items.length == 0">Nothing to shop, add some items to see them here!</p>
+      <input v-model="newItem" @keyup.enter="saveItem" placeholder="Write out the new item" type="text" name="newItem" id="newItem">
+      <button @click="saveItem" :disabled="newItem.length === 0" class="btn btn-primary">Save item</button>
+      <p v-if="items.length == 0">Nothing to shop, add some items to see them here!</p>
+    </div>
+    <div>
+      <button v-if="items.length != 0 && status === false" v-on:click="deleteItem" style="background-color:rgb(98, 0, 255)" class="btn btn-primary"> Delete Last Item </button>
+      <button v-if="items.length === 0 && status === false" v-on:click="deleteItem" style="background-color:rgb(128, 128, 128)" class="btn btn-primary" disabled="true"> Delete Last Item </button>
     </div>
     <ul>
       <li v-for="item in items">{{ item }}</li>
