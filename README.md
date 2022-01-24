@@ -46,9 +46,9 @@ Follow these steps:
 
 ## Dynamic classes with v-bind
 
-- [ ] Change the list of items from a list of Strings to a list of Objects with `label` and `purchased` attributes. Update the `saveItem` method and the template accordingly
-- [ ] Make use of the class `.strikeout` in the css file:
+- [x] Change the list of items from a list of Strings to a list of Objects with `label` and `purchased` attributes. Update the `saveItem` method and the template accordingly
+- [x] Make use of the class `.strikeout` in the css file:
   to style the purchased items. See the [Vue.js Guide section on Class and Style Bindings](https://vuejs.org/v2/guide/class-and-style.html)
-  - [ ]  Use first the *object syntax* `v-bind:class="{myclass: expression}"` and 
-  - [ ]  later the *array syntax* `v-bind:class=[exp1, exp2]`
+  - [x]  Use first the *object syntax* `v-bind:class="{myclass: expression}"` and 
+  - [x]  later the *array syntax* `v-bind:class=[exp1, exp2]`
 
