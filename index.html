@@ -25,7 +25,7 @@
     <ul>
       <li v-for="item in reversedItems" :class="{strikeout: item.purchased}" @click="togglePurchased(item)">{{ item.label }}</li>
     </ul>
-    <p v-if="items.length === 0">You don't have any items!</p>
+    <p v-if="items.length === 0">You don't have any items in your list!</p>
   </div>
   <script>
     const shoppingList = new Vue({
