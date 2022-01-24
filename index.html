@@ -25,6 +25,7 @@
     <ul>
       <li v-for="item in reversedItems" :class="{strikeout: item.purchased}" @click="togglePurchased(item)">{{ item.label }}</li>
     </ul>
+    <p v-if="items.length === 0">Nice job! You've bought all your items.</p>
   </div>
   <script>
     const shoppingList = new Vue({
@@ -38,6 +39,11 @@
           "Apples",
           "Chocolate"
         ]
+      },
+      computed: {
+        reversedItems() {
+        return this.items.slice(0).reverse();
+        }
       },
       methods: {
         saveItem: function() {
